@@ -10,11 +10,13 @@ func main() {
         Level string
         Rating float64
     }
-    //initializes with a zero value
-    var course_1 courseMeta
+    //structs initializes with a zero value when we declare them
+    //there are 3 ways to declare a struct
+    
+    var course_1 courseMeta //first way
     
     //this method gives us a pointer
-    course_2 := new(courseMeta)
+    course_2 := new(courseMeta) //second way
     
     course_1.Author = "piumal"
     course_1.Level = "advanced"
@@ -25,6 +27,7 @@ func main() {
     course_2.Rating = 4.5
     
     //literal way of declaring and initializing structs
+    //third way
     course_3 := courseMeta{
         Author: "Roshan Piumal",
         Level: "Intermediate",
