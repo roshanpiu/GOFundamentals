@@ -10,3 +10,5 @@
 //slices are passed to functions as references
 
 //anytime we create a slice go creates a hidden array to store the data of the slice
+
+//always use slices when ever possible
